@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light--Grey: hsl(217, 12%, 63%);
+    --Medium--Grey: hsl(218, 12%, 26%);
+    --Dark--Blue: hsl(215, 17%, 14%);
+    --Very--Dark--Blue: hsl(216, 12%, 8%);
+
+}
+
+body{
+    background-color: var(--Very--Dark--Blue);
+    justify-content: space-around;
+}
+
+.container{
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: var(--Dark--Blue);
+    height: 50%;
+    width: 25%;
+    padding: 2%;
+
+}
+
+.main-star{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--Medium--Grey);
+    margin-bottom: 5%;
+}
+.review-us{
+    margin-top: 7%;
+}
+.review-us h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 3%;
+    font-family: "Overpass", sans-serif;
+    color: var(--White);
+    
+}
+
+.review-us p{
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 5%;
+    color: var(--Light--Grey);
+}
+.scores {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.scores button {
+    height: 50px;
+    width: 50px;
+    background-color: var(--Medium--Grey);
+    border-radius: 100%;
+    margin-bottom: 10%;
+    border: 1px;
+}
+
+.scores button:hover{
+    background-color: var(--Light--Grey);
+    color: var(--White);
+}
+
+.submit button{
+    width: 100%;
+    border-radius: 16px;
+    font-size: 15px;
+    color: var(--White);
+    background-color: var(--Orange);
+    border: 1px;
+    padding: 3%;
+}
+.submit button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+@media screen and (max-width:435px) {
+    .container{
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: var(--Dark--Blue);
+    height: 45%;
+    width: 90%;
+    padding: 3%;
+
+}
+    
+}
