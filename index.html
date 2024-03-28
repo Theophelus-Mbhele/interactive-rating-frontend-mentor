@@ -26,15 +26,15 @@
       </p>
     </div>
     <div class="scores">
-       <button class="rating">1</button>
-       <button class="rating">2</button>
-       <button class="rating">3</button>
-       <button class="rating">4</button>
-       <button class="rating">5</button>
+       <button id="1" class="rating">1</button>
+       <button id="2" class="rating">2</button>
+       <button id="3" class="rating">3</button>
+       <button id="4" class="rating">4</button>
+       <button id="5" class="rating">5</button>
     </div>
 
     <div class="submit">
-      <button >SUBMIT</button>
+      <button id="submit">SUBMIT</button>
     </div>
   
 
@@ -47,12 +47,26 @@
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <div class="hidden-section active">
+    <div class="main-pic">
+      <img src="images/illustration-thank-you.svg" alt="" srcset="">
+    </div>
+    <div class="selected">
+      <p>You selected <span id="chosen">4</span> out of 5
+      </p>
+    </div>
+    <div class="thank-you"> 
+      <h1>Thank you!</h1>
+      <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
+    
 
-  Thank you!
+  </div>  
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+
+
+ 
 
   <!-- Thank you state end -->
 

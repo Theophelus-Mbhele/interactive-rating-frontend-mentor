@@ -45,7 +45,7 @@ body{
 .review-us{
     margin-top: 7%;
 }
-.review-us h1{
+h1{
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 3%;
@@ -95,7 +95,7 @@ body{
 }
 
 @media screen and (max-width:435px) {
-    .container{
+    .container {
     border-radius: 10px;
     top: 50%;
     left: 50%;
@@ -105,7 +105,73 @@ body{
     height: 45%;
     width: 90%;
     padding: 3%;
+    
+    }
+  
+}
+
+.active{
+    visibility: hidden;
+}
+.hidden-section{
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: var(--Dark--Blue);
+    height: 50%;
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    
 
 }
+
+.main-pic{
+    padding: 3%;
+    
+}
+
+.selected{
+    color: var(--Orange);
+    border: 1px solid;
+    border-radius: 16px;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    cursor: pointer;
+
+}
+.selected p{
+    font-size: 15px;
+    padding: 3px;
+    font-family: "Overpass", sans-serif;
+}
+
+.thank-you p{
+    font-size: 15px;
+    color: var(--Light--Grey);
+    font-family: "Overpass", sans-serif;
+}
+
+@media  screen and (max-width:435px) {
+    .hidden-section{
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-color: var(--Dark--Blue);
+        height: 45%;
+        width: 90%;
+        padding: 3%;
+        text-align: center;
+        /* z-index: -1; */
+    
+    }
+    
     
 }
